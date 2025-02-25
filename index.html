@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css"> 
+    <script defer src="main.js"></script>
+    <title>Skills Bootcamp Case Study</title> 
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="logo.png" alt="Just IT Logo" class="header-img">
+        <h1>Skills Bootcamp Case Study Form</h1>
+        <p>We love to hear your feedback on our service</p>
+    </header>
+
+    <main>
+        <form action="https://formspree.io/f/xdkaryle" method="POST">
+            <!-- Name Section -->
+            <section class="feedback-section">
+                <label for="name"><h2>Name:</h2></label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required autocomplete="name">
+            </section>
+
+            <!-- Programme Section -->
+            <section class="feedback-section">
+                <label for="programme"><h2>What skills bootcamp programme are you studying?</h2></label>
+                <input type="text" id="programme" name="programme" placeholder="Enter programme name" required>
+            </section>
+
+            <!-- Case Study Questions -->
+            <section class="feedback-section">
+                <label for="tech-industry"><h2>1. Why did you want to get into the tech industry?</h2></label>
+                <textarea id="tech-industry" name="tech-industry" placeholder="Write your answer here..." required></textarea>
+            </section>
+
+            <section class="feedback-section">
+                <label for="involvement"><h2>2. What made you want to get involved in Skills Bootcamps?</h2></label>
+                <textarea id="involvement" name="involvement" placeholder="Write your answer here..." required></textarea>
+            </section>
+
+            <section class="feedback-section">
+                <label for="career-goals"><h2>3. What will the bootcamp do for you and your career goals?</h2></label>
+                <textarea id="career-goals" name="career-goals" placeholder="Write your answer here..." required></textarea>
+            </section>
+
+            <section class="feedback-section">
+                <label for="career-achievement"><h2>4. What do you want to achieve in your career in the next 3-5 years?</h2></label>
+                <textarea id="career-achievement" name="career-achievement" placeholder="Write your answer here..." required></textarea>
+            </section>
+
+            <!-- Additional Comments -->
+            <section class="feedback-section">
+                <label for="additional-comments"><h2>Any other comments?</h2></label>
+                <textarea id="additional-comments" name="additional-comments" placeholder="Write your answer here..."></textarea>
+            </section>
+
+            <!-- Consent Section -->
+            <section class="feedback-section">
+                <h2>Consent</h2>
+                <p>If aged 18 or above:</p>
+                <input type="checkbox" id="consent-adult" name="consent-adult" required>
+                <label for="consent-adult">I agree for the written case study above being used for marketing and publicity related purposes.</label>
+                
+                <p>If you are under 16, consent is required from a parent or guardian:</p>
+                <input type="checkbox" id="consent-guardian" name="consent-guardian">
+                <label for="consent-guardian">I agree for my child’s case study to be used for marketing and publicity purposes.</label>
+            </section>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Submit Case Study</button>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>If you require more detail on how your case study will be used in accordance with the GDPR guidelines, please contact
+            <a href="mailto:marketing@justit.co.uk">marketing@justit.co.uk</a></p>
+        <p>&copy; 2024 Just IT</p>
+        
+    </footer>
+</body>
+</html>
